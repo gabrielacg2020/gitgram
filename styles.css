@@ -20,7 +20,7 @@ input:focus {
 }
 
 .content {
-    border: 1px solid black;
+    border: 0.1px solid rgba(0, 0, 0, 0.5);
     background-color: white;
 
     width: 35%;
@@ -79,7 +79,21 @@ input:focus {
 .or-content {
     flex: 1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
 
+}
+.line {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    width: 30%;
+    padding: 3.5px;
+}
+.or-content > small {
+    border-right: 20px solid #fafafa;
+    border-left: 20px solid #fafafa;
+    color: rgba(0, 0, 0, 0.6);;
+    font-weight: bold;
 }
